@@ -33,6 +33,31 @@
             .animated-text {
               animation: slideIn 1s ease forwards infinite;
             }
+            /* Style for the sun */
+  .sun {
+    fill: #FFD700;
+    animation: rotateSun 5s linear infinite;
+  }
+
+  /* Define the animation for the sun */
+  @keyframes rotateSun {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* Style for the sky */
+  .sky {
+    fill: #87CEEB; /* light blue */
+  }
+
+  /* Style for the ground */
+  .ground {
+    fill: #90EE90; /* light green */
+  }
           </style>
           <style>
             /* Define the raindrop animation */
@@ -12673,6 +12698,11 @@ section.resume-section .resume-section-content {
                 Awards
             </a>
             </li>
+            <li>
+                <a href="waph-challast.html">
+                Waph-html
+            </a>
+            </li>
         </ul>
 
     </nav>
@@ -12920,11 +12950,18 @@ challast@mail.uc.edu
 </section>
 
 <section class="main-section" id="Interests">
-    <h2>Rain Drop Animation</h2>
+    <h2>sun Animation</h2>
 
-    <div class="container">
-        <!-- Raindrops will be dynamically created here -->
-      </div>
+    <svg width="500" height="300">
+        <!-- Sky -->
+        <rect class="sky" x="0" y="0" width="500" height="200" />
+      
+        <!-- Sun -->
+        <circle class="sun" cx="400" cy="50" r="30" />
+      
+        <!-- Ground -->
+        <rect class="ground" x="0" y="200" width="500" height="100" />
+      </svg>
 
 
 </section>
