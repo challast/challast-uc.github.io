@@ -1,0 +1,73 @@
+.left-navigation{
+    position: fixed    ;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: rgb(189, 93, 56);
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.profilepic{
+    height: 160px;
+    width: 160px;
+    border: 10px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+
+}
+.links ul{
+    padding-left: 0px;
+    text-align: center;
+}
+.links li, .links li a {
+    color: white;
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    line-height: 300x;
+    cursor: pointer;
+    text-align: center;
+}
+body {
+    padding-left: 17%;
+}
+
+.right-content{
+    left: 22%;
+    position: absolute;
+    margin-left: 20px;
+    
+}
+.main-section{
+    padding: 40px;
+    height: 80vh;
+    border-bottom: 2px solid grey;
+    
+}
+#About{
+    padding: 150px 40px;
+
+}
+
+.text-custom-color{
+    color: rgb(189, 93, 56)
+}
+
+.personal-details , .profile-summary{
+    margin: 20px 0;
+}
+#Experience, #Education, #Skills, #Interests, #Awards{
+    padding: 80px 40px;
+    
+}
+#Experience h2,  #education h2,
+ #Skills h2, #Interests h2, #Awards h2 {
+    margin-bottom: 60px;
+}
+
+.Awards-list li{
+    list-style: none;
+}
